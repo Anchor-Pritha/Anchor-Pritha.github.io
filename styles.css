@@ -190,6 +190,13 @@ h3 {
   transform: translateY(-2px);
 }
 
+.Insta_id_bttn{
+  color: #071014;
+  background: linear-gradient(135deg, var(--gold), #f4d27c);
+  border-color: transparent;
+  box-shadow: 0 16px 34px rgba(215, 168, 74, 0.22)
+}
+
 .bttn.primary {
   color: #071014;
   background: linear-gradient(135deg, var(--gold), #f4d27c);
