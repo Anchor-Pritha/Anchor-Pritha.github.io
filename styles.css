@@ -73,7 +73,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   padding: 1px;
-  font-size: clamp(1.8rem, 3.2vw, 40px);
+  font-size: clamp(1.7rem, 3vw, 30px);
   line-height: 1;
   width: 100%;
 }
@@ -137,8 +137,6 @@ a:hover {
   margin: 0 auto;
   font-size: 20px;
   white-space: pre-line;
-  overflow-wrap: break-word;
-  text-align: center;
 }
 .languageBar {
   background-color: white;
@@ -207,17 +205,18 @@ a:hover {
   object-fit: contain;
 }
 .specialImage {
-  width: 410px;
+  width: 400px;
   object-fit: cover;
-  margin-left: clamp(-15.5rem, -15.5vw, 0rem);
+  margin-left: clamp(-16rem, -16vw, 0rem);
 }
 .weddingImage {
-  width: 420px;
+  width: 400px;
   object-fit: cover;
+  height: 570px;
 }
 .hatImage {
   width: 452px;
-  margin-left: clamp(0rem, 31vw, 31rem);
+  margin-left: clamp(0rem, 31.5vw, 31.5rem);
 }
 .textAlign {
   margin-left: 22rem;
@@ -227,10 +226,10 @@ a:hover {
   justify-content: center;
   width: 100%;
   gap: 60px;
-  margin: 0 auto;
+  margin: 0 10px 0;
 }
 .corporateImage {
-  width: 420px;
+  width: 400px;
   object-fit: cover;
   margin-right: 0;
   margin-left: 0;
@@ -271,11 +270,12 @@ a:hover {
   color: #005582;
 }
 /* For mobile devices */
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .topNav {
     width: 100%;
     border-left-width: 6px;
     border-right-width: 6px;
+    font-size: large;
   }
   .menu,
   a {
@@ -288,6 +288,10 @@ a:hover {
   .asideNav {
     gap: 12px;
     margin-left: 0;
+  }
+  .asideNav a,
+  .nameNav a {
+    font-size: 1rem;
   }
   .instagramSearchImage {
     width: calc(100% - 1rem);
@@ -310,9 +314,12 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
   }
-  .typingAnimation,
-  .typingAnimationBottom {
+  .typingAnimation {
     font-size: 2rem;
+    color: white;
+  }
+  .typingAnimationBottom {
+    font-size: 1.6rem;
     color: white;
   }
   .chooseText {
@@ -332,10 +339,6 @@ a:hover {
   }
   .languages span {
     margin-right: 0;
-  }
-  .footer {
-    flex-direction: column;
-    gap: 10px;
   }
   .hatImage {
     margin-left: 0;
