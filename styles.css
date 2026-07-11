@@ -23,7 +23,6 @@ body {
 .reveal {
   opacity: 0;
   transform: translateY(150px);
-  will-change: transform, opacity;
   transition:
     opacity 0.6s ease,
     transform 0.6s ease;
@@ -88,7 +87,7 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 19rem;
+  gap: clamp(1rem, 19vw, 19rem);
 }
 .menu,
 a {
@@ -127,10 +126,11 @@ a:hover {
 }
 .anchorPrithaImage {
   margin-top: 40px;
-  width: 960px;
-  height: 563px;
+  width: min(960px, 90vw);
+  height: auto;
+  aspect-ratio: 960 / 563;
   object-fit: contain;
-  margin-left: 30rem;
+  margin-left: clamp(0rem, 30vw, 30rem);
 }
 .chooseText {
   width: min(100% - 2rem, 700px);
@@ -199,7 +199,7 @@ a:hover {
 } */
 .languages span {
   color: white;
-  margin-right: 39rem;
+  margin-right: clamp(0rem, 39vw, 39rem);
 }
 .Image {
   margin-top: 40px;
@@ -209,7 +209,7 @@ a:hover {
 .specialImage {
   width: 410px;
   object-fit: cover;
-  margin-left: -15.5rem;
+  margin-left: clamp(-15.5rem, -15.5vw, 0rem);
 }
 .weddingImage {
   width: 420px;
@@ -217,7 +217,7 @@ a:hover {
 }
 .hatImage {
   width: 452px;
-  margin-left: 31rem;
+  margin-left: clamp(0rem, 31vw, 31rem);
 }
 .textAlign {
   margin-left: 22rem;
@@ -290,15 +290,21 @@ a:hover {
     margin-left: 0;
   }
   .instagramSearchImage {
-    width: 100%;
+    width: calc(100% - 1rem);
     height: auto;
     margin-left: 0;
   }
   .Image {
-    width: 100%;
+    width: calc(100% - 4rem);
+    height: calc(100% - 20rem);
     height: auto;
     margin-left: 0;
     object-fit: cover;
+  }
+  .anchorPrithaImage {
+    width: calc(100% - 1rem);
+    height: auto;
+    margin-left: 0;
   }
   .typingAnimation {
     margin-left: auto;
@@ -310,29 +316,60 @@ a:hover {
     color: white;
   }
   .chooseText {
-    width: calc(100% - 1rem);
+    width: calc(100% - 3rem);
     font-size: 16px;
   }
   .flex-container {
-    width: calc(100% - 1rem);
+    width: calc(100% - 3rem);
     flex-direction: column;
     align-items: center;
     gap: 0;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+    justify-items: center;
+  }
+  .languages span {
+    margin-right: 0;
   }
   .footer {
     flex-direction: column;
     gap: 10px;
   }
   .hatImage {
-    width: 100%;
-    height: auto;
     margin-left: 0;
+    overflow: hidden;
   }
   .specialImage {
-    width: 100%;
     height: auto;
     margin-left: 0;
   }
+  .reveal--image {
+    opacity: 1;
+  }
+  /* .reveal {
+    opacity: 1;
+    transform: translateY(150px);
+    transition:
+      opacity 0.6s ease,
+      transform 0.6s ease;
+  }
+  /* .reveal-left { */
+  /* transition:
+      opacity 1s ease,
+      transform 1s ease;
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  .reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  } */
 }
 @media (max-width: 360px) {
   .topNav {
