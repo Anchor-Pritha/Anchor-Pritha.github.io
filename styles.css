@@ -243,14 +243,24 @@ a:hover {
   margin-left: 0;
 }
 .footer {
-  display: flex;
   border-top: 1px solid white;
-  margin-top: 100px;
-  padding: 20px;
+  margin-top: 80px;
+  padding: 15px;
   justify-content: center;
   position: relative;
   align-items: center;
-  gap: clamp(2rem, 12vw, 200px);
+  text-align: center;
+}
+.footer--flex-container {
+  display: flex;
+  gap: clamp(2rem, 12vw, 170px);
+  margin-left: 39%;
+}
+.footer--text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
 }
 .instagram-link {
   color: #e1306c;
@@ -330,7 +340,7 @@ a:hover {
   }
   .chooseText {
     width: calc(100% - 3rem);
-    font-size: 16px;
+    font-size: 14px;
   }
   .flex-container {
     width: calc(100% - 3rem);
@@ -353,6 +363,9 @@ a:hover {
   .specialImage {
     height: auto;
     margin-left: 0;
+  }
+  .footer--flex-container {
+    margin-left: 30%;
   }
   /* .reveal--image {
     opacity: 1;
