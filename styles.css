@@ -138,6 +138,10 @@ a:hover {
   font-size: 20px;
   white-space: pre-line;
 }
+.number {
+  font-weight: bolder;
+  text-decoration: underline;
+}
 .languageBar {
   background-color: white;
   color: white;
@@ -203,6 +207,10 @@ a:hover {
   margin-top: 40px;
   height: 563px;
   object-fit: contain;
+  transition: transform 0.5s ease-in-out;
+}
+.Image:hover {
+  transform: scale(1.05);
 }
 .specialImage {
   width: 400px;
@@ -253,13 +261,13 @@ a:hover {
 .instagram-link:hover {
   color: #bc2a8d;
 }
-.youtube-link {
-  color: #ff0000;
+.telegram-link {
+  color: #0088cc;
   font-size: 30px;
   text-decoration: none;
 }
-.youtube-link:hover {
-  color: #cc0000;
+.telegram-link:hover {
+  color: #005582;
 }
 .linkedin-link {
   color: #0077b5;
@@ -293,21 +301,19 @@ a:hover {
   .nameNav a {
     font-size: 1rem;
   }
-  .instagramSearchImage {
-    width: calc(100% - 1rem);
-    height: auto;
-    margin-left: 0;
-  }
   .Image {
     width: calc(100% - 4rem);
     height: calc(100% - 20rem);
     height: auto;
     margin-left: 0;
     object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+  .Image:hover {
+    transform: scale(1.03);
   }
   .anchorPrithaImage {
-    width: calc(100% - 1rem);
-    height: auto;
+    width: 100%;
     margin-left: 0;
   }
   .typingAnimation {
