@@ -138,6 +138,9 @@ a:hover {
   font-size: 20px;
   white-space: pre-line;
 }
+.text {
+  line-height: 1.5;
+}
 .number {
   font-weight: bolder;
   text-decoration: underline;
@@ -322,13 +325,13 @@ a:hover {
   .Image:hover {
     transform: scale(1.03);
   }
+  .weddingImage {
+    width: 100%;
+    margin-left: 20px;
+  }
   .anchorPrithaImage {
     width: 100%;
     margin-left: 0;
-  }
-  .typingAnimation {
-    margin-left: auto;
-    margin-right: auto;
   }
   .typingAnimation {
     font-size: 2rem;
@@ -364,8 +367,11 @@ a:hover {
     height: auto;
     margin-left: 0;
   }
+  .footer--text {
+    font-size: 1.3rem;
+  }
   .footer--flex-container {
-    margin-left: 30%;
+    margin-left: 29.7%;
   }
   /* .reveal--image {
     opacity: 1;
