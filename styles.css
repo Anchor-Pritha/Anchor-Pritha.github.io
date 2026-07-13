@@ -257,7 +257,7 @@ a:hover {
 .footer--flex-container {
   display: flex;
   gap: clamp(2rem, 12vw, 170px);
-  margin-left: 39%;
+  justify-content: center;
 }
 .footer--text {
   padding: 0;
@@ -368,10 +368,12 @@ a:hover {
     margin-left: 0;
   }
   .footer--text {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .footer--flex-container {
-    margin-left: 29.7%;
+    width: 100vw;
+    font-size: 0.1rem;
+    justify-content: center;
   }
   /* .reveal--image {
     opacity: 1;
