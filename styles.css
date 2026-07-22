@@ -371,7 +371,6 @@ a:hover {
     font-size: 1.1rem;
   }
   .footer--flex-container {
-    width: 100vw;
     font-size: 0.1rem;
     justify-content: center;
   }
