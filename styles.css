@@ -3,10 +3,10 @@
 *::after {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  overscroll-behavior-y: none;
 }
 
 body {
@@ -19,6 +19,7 @@ body {
   color: white;
   overflow-x: hidden;
 }
+
 /* Scrolling upwards transition */
 .reveal {
   opacity: 0;
@@ -27,6 +28,7 @@ body {
     opacity 0.6s ease,
     transform 0.6s ease;
 }
+
 /* For the language bars scrolling left transition*/
 .reveal-left {
   transition:
@@ -35,14 +37,17 @@ body {
   opacity: 0;
   transform: translateX(-200px);
 }
+
 .reveal-left.active {
   opacity: 1;
   transform: translateX(0);
 }
+
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
+
 .topNav {
   width: 100%;
   box-sizing: border-box;
@@ -54,11 +59,13 @@ body {
   border: 10px solid black;
   border-bottom: 1px solid white;
 }
+
 .textBold {
   font-weight: bolder;
   font-size: 25px;
   color: #00bfff;
 }
+
 .typingAnimation {
   width: 13ch;
   overflow: hidden;
@@ -68,6 +75,7 @@ body {
   line-height: 1;
   margin: 40px auto 4px;
 }
+
 .typingAnimationBottom {
   margin: 0 auto;
   overflow: hidden;
@@ -77,6 +85,7 @@ body {
   line-height: 1;
   width: 100%;
 }
+
 .typingAnimation,
 .typingAnimationBottom {
   display: flex;
@@ -84,11 +93,13 @@ body {
   align-items: center;
   overflow: visible;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(1rem, 19vw, 19rem);
 }
+
 .menu,
 a {
   display: flex;
@@ -105,25 +116,31 @@ a {
   bottom: 6px;
   margin-bottom: 0;
 }
+
 .menu {
   align-items: center;
   justify-content: space-between;
   margin: 0;
 }
+
 a {
   transition-duration: 0.5s;
 }
+
 .asideNav {
   display: flex;
   gap: 20px;
   margin-left: 0;
 }
+
 .nameNav {
   margin-left: 20px;
 }
+
 a:hover {
   transform: scale(1.15);
 }
+
 .anchorPrithaImage {
   margin-top: 40px;
   width: min(960px, 90vw);
@@ -132,28 +149,34 @@ a:hover {
   object-fit: contain;
   margin-left: clamp(0rem, 30vw, 30rem);
 }
+
 .chooseText {
   width: min(100% - 2rem, 700px);
   margin: 0 auto;
   font-size: 20px;
   white-space: pre-line;
 }
+
 .text {
   line-height: 1.5;
 }
+
 .number {
   font-weight: bolder;
   text-decoration: underline;
 }
+
 .languageBar {
   background-color: white;
   color: white;
   opacity: 0.4;
   border-radius: 10px;
 }
+
 .text--hidden {
   opacity: 0;
 }
+
 .languageBar::before {
   /*For water animation*/
   content: "";
@@ -165,9 +188,11 @@ a:hover {
   background: linear-gradient(to top, #00bfff, #4fd9ff);
   transition: height 0.8s ease;
 }
+
 .languageBar:hover::before {
   height: 100%;
 }
+
 .languageBar::after {
   content: "";
   position: absolute;
@@ -183,16 +208,20 @@ a:hover {
 .languageBar:hover::after {
   top: -10px;
 }
+
 .languageBar::after {
   animation: wave 1s ease-in-out infinite;
 }
+
 @keyframes wave {
   0% {
     transform: translateX(-7px);
   }
+
   50% {
     transform: translateX(7px);
   }
+
   100% {
     transform: translateX(-7px);
   }
@@ -206,32 +235,39 @@ a:hover {
   color: white;
   margin-right: clamp(0rem, 39vw, 39rem);
 }
+
 .Image {
   margin-top: 40px;
   height: 563px;
   object-fit: contain;
   transition: transform 0.5s ease-in-out;
 }
+
 .Image:hover {
   transform: scale(1.05);
 }
+
 .specialImage {
   width: 400px;
   object-fit: cover;
   margin-left: clamp(-16rem, -16vw, 0rem);
 }
+
 .weddingImage {
   width: 400px;
   object-fit: cover;
   height: 570px;
 }
+
 .hatImage {
   width: 452px;
   margin-left: clamp(0rem, 31.5vw, 31.5rem);
 }
+
 .textAlign {
   margin-left: 22rem;
 }
+
 .flex-container {
   display: flex;
   justify-content: center;
@@ -239,12 +275,14 @@ a:hover {
   gap: 60px;
   margin: 0 10px 0;
 }
+
 .corporateImage {
   width: 400px;
   object-fit: cover;
   margin-right: 0;
   margin-left: 0;
 }
+
 .footer {
   border-top: 1px solid white;
   margin-top: 80px;
@@ -254,17 +292,20 @@ a:hover {
   align-items: center;
   text-align: center;
 }
+
 .footer--flex-container {
   display: flex;
   gap: clamp(2rem, 12vw, 170px);
   justify-content: center;
 }
+
 .footer--text {
   padding: 0;
   margin: 0;
   margin-bottom: 15px;
   font-size: 1.5rem;
 }
+
 .instagram-link {
   color: #e1306c;
   font-size: 30px;
@@ -274,22 +315,27 @@ a:hover {
 .instagram-link:hover {
   color: #bc2a8d;
 }
+
 .telegram-link {
   color: #0088cc;
   font-size: 30px;
   text-decoration: none;
 }
+
 .telegram-link:hover {
   color: #005582;
 }
+
 .linkedin-link {
   color: #0077b5;
   font-size: 30px;
   text-decoration: none;
 }
+
 .linkedin-link:hover {
   color: #005582;
 }
+
 /* For mobile devices */
 @media (max-width: 750px) {
   .topNav {
@@ -298,22 +344,27 @@ a:hover {
     border-right-width: 6px;
     font-size: large;
   }
+
   .menu,
   a {
     gap: 12px;
     font-size: 20px;
   }
+
   .nameNav {
     margin-left: 0;
   }
+
   .asideNav {
     gap: 12px;
     margin-left: 0;
   }
+
   .asideNav a,
   .nameNav a {
     font-size: 1rem;
   }
+
   .Image {
     width: calc(100% - 4rem);
     height: calc(100% - 20rem);
@@ -322,58 +373,72 @@ a:hover {
     object-fit: cover;
     transition: transform 0.5s ease-in-out;
   }
+
   .Image:hover {
     transform: scale(1.03);
   }
+
   .weddingImage {
     width: 100%;
     margin-left: 20px;
   }
+
   .anchorPrithaImage {
     width: 100%;
     margin-left: 0;
   }
+
   .typingAnimation {
     font-size: 2rem;
     color: white;
   }
+
   .typingAnimationBottom {
     font-size: 1.6rem;
     color: white;
   }
+
   .chooseText {
     width: calc(100% - 3rem);
     font-size: 14px;
   }
+
   .flex-container {
     width: calc(100% - 3rem);
     flex-direction: column;
     align-items: center;
     gap: 0;
   }
+
   .grid-container {
     grid-template-columns: 1fr;
     gap: 0;
     justify-items: center;
   }
+
   .languages span {
     margin-right: 0;
   }
+
   .hatImage {
     margin-left: 0;
     overflow: hidden;
   }
+
   .specialImage {
     height: auto;
     margin-left: 0;
   }
+
   .footer--text {
     font-size: 1.1rem;
   }
+
   .footer--flex-container {
     font-size: 0.1rem;
     justify-content: center;
   }
+
   /* .reveal--image {
     opacity: 1;
   } */
@@ -400,11 +465,13 @@ a:hover {
     transform: translateY(0);
   } */
 }
+
 @media (max-width: 360px) {
   .topNav {
     border-left-width: 4px;
     border-right-width: 4px;
   }
+
   .menu,
   a {
     gap: 8px;
